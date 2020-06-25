@@ -5,11 +5,12 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(../assets/main-bg.jpg);
+  background-image: url(../assets/bg-card.jpg);
   background-size: cover;
 }
-app-header {
+header {
   display: inline;
+  color: white;
 }
 
 .card {
@@ -17,7 +18,7 @@ app-header {
    border-radius: 10px;
    padding: 20px;
    margin: 20px 10px;
-   background-image: url(../assets/bg-card.jpg);
+   background-image: url(../assets/main-bg.jpg);
    background-size: cover;
 }
 
@@ -33,9 +34,9 @@ main {
 }
 
 .ftprofile {
-  width: 50%;
   border-radius: 50%;
   border: 3px ridge black;
+  margin: 0 40px;
 }
 .personal {
   width: 100%;
@@ -43,12 +44,18 @@ main {
   grid-template-columns: 2.5fr 1fr;
 }
 
+.content-profiles{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
 .about{
   display: grid;
   grid-template-columns: 30% 70%;
 }
-.smk{
-  justify-items: center;
+
+.sarjana, .smk{
+  text-align: center;
 }
 .container{
   display: grid;
@@ -56,5 +63,12 @@ main {
   justify-items: center;
 }
 .biodata {
-  width: ;
+}
+.logo-kerja{
+  margin: auto;
+}
+
+.kerja{
+  display: grid;
+  grid-template-columns: 40% 60%;
 }

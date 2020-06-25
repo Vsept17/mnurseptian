@@ -8,8 +8,8 @@
     <title>Portofolio Saya</title>
   </head>
   <body>
-    <app-header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top" font-color="white">
         <div class="right-header">
           <h3>My Portfolio</h3>
         </div>
@@ -19,7 +19,7 @@
               <a class="nav-link" href="#aboutme">Tentang Saya<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#profile">Profil</a>
+              <a class="nav-link" href="#profile">Portofolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Kontak</a>
@@ -27,16 +27,16 @@
           </ul>
         </div>
       </nav>
-    </app-header>
+    </header>
     <main>
       <div class="personal" id="aboutme">
           <aside class="card about">
             <div class="abt">
-              <img class="ftprofile" src="./src/assets/figure.jpg">
+              <img class="ftprofile" src="./src/assets/figure.jpg" width="60%">
             </div>
             <div class="ceritaku">
               <h4>Tentang Saya</h4>
-              <p>Hallo! Perkenalkan, saya M NUR SEPTIAN </p>
+              <p>Hallo! Perkenalkan, saya M NUR SEPTIAN. Saya lulusan S1 jurusan Teknik Informatika. Saya sangat menyukai belajar hal-hal baru dan tantangan terutama pada bidang IT. Namun, tidak menutup kemungkinan untuk mempelajari hal-hal baru selain bidang IT. Saya termasuk orang yang mudah beradaptasi dengan lingkungan baru, dapat bekerja sendiri maupun team, dan memiliki motivasi yang tinggi dalam bekerja. </p>
             </div>
           </aside>
 
@@ -45,15 +45,15 @@
             <table cellpadding="0">
               <tbody>
                 <tr>
-                  <td><b>Place of Birth :</b></td>
+                  <td><b>Tempat Lahir:</b></td>
                   <td>Jakarta</td>
                 </tr>
                 <tr>
-                  <td><b>Birth Of Date :</b></td>
+                  <td><b>Tanggal Lahir :</b></td>
                   <td>16 September 1995</td>
                 </tr>
                 <tr>
-                  <td><b>Religion :</b></td>
+                  <td><b>Agama :</b></td>
                   <td>Islam</td>
                 </tr>
               </tbody>
@@ -62,27 +62,43 @@
           </div>
         </div>
       </div>
-      <div class="profiles">
-        <article class="card" id="profile">
-          <h3>Pendidikan</h3>
-          <div class="container">
-            <div class="sarjana">
-              <img src="./src/assets/unkris.png" alt="Unkris">
-              <p><b>2015-2019<br>Universitas Krisnadwipayana<br>Teknik Informatika<br>GPA 3.45 of 4.00</b></p>
+      <div class="content-profiles">
+        <div class="profiles">
+          <article class="card" id="profile">
+            <h3>Pendidikan</h3>
+            <div class="container">
+              <div class="sarjana">
+                <img class="logo-edu" src="./src/assets/unkris.png" width="50%" alt="Unkris">
+                <p><b>2015-2019<br>Universitas Krisnadwipayana<br>Teknik Informatika<br>GPA 3.45 of 4.00</b></p>
+              </div>
+              <div class="smk">
+                <img class="logo-edu" src="./src/assets/malaka.png" width="60%" alt="SMK Malaka">
+                <p><b>2010-2013<br>SMK Malaka<br>Teknik Komputer Jaringan</b></p>
+              </div>
             </div>
-            <div class="smk">
-              <img src="./src/assets/malaka.png" alt="SMK Malaka">
-              <p><b>2010-2013<br>SMK Malaka<br>Teknik Komputer Jaringan</b></p>
+          </article>
+        </div>
+        <div class="careers">
+          <article class="card">
+            <h3>Pengalaman Kerja</h3>
+            <div class="kerja">
+              <img class="logo-kerja" src="./src/assets/logo-mbk.png" width="65%" alt="MBK">
+              <p><b>PT. Mitra Buana Komputindo<br>Okt 2013 - Apr 2014 Technical Support</b><br>Contract<br>
+                - Migrasi Rollout<br>
+                - Migrasi E-mail</p>
             </div>
-          </div>
-        </article>
+            <div class="kerja">
+              <img class="logo-kerja" src="./src/assets/logo-andra.png" width="65%" alt="Andra7208">
+              <p><b>Andra7208 Computer<br>Nov 2015 - Sep2019 IT Support</b><br>Freelance<br>- Service dan Maintenance Komputer Customer pada Hardware dan Software</p>
+            </div>
+          </article>
+        </div>
       </div>
-      <div class="careers">
-        <article class="card">
-          <h3>Pengalaman Kerja</h3>
-        </article>
+      <div class="card skills">
+        <h3>Skill</h3>
       </div>
-
     </main>
+    <footer>
+    </footer>
   </body>
 </html>
