@@ -10,44 +10,30 @@ img {
 body {
   margin: 50px;
   font-size: 18px;
-  background-image: url(../assets/bg-card.jpg);
+  background-color: lawngreen;
   background-size: cover;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
-
-header {
-  display: inline;
-  color: white;
+.headline{
+  color: limegreen;
+  font-weight: 400;
 }
+
+/*Tentang Saya*/
 
 .card {
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
    border-radius: 10px;
    padding: 20px;
-   margin: 20px 10px;
-   background-image: url(../assets/main-bg.jpg);
+   margin: 0 10px 10px 10px;
    background-size: cover;
-}
-
-main {
-}
-
-
-.personal {
-
-}
-
-.content-profiles{
-  display: grid;
-  grid-template-columns: 50% 50%;
 }
 
 .about{
   display: grid;
   grid-template-areas: 
   'ftprofile biodata biodata'
-  'ftprofile biodata biodata'
-  'ceritaku ceritaku ceritaku';
+  'ftprofile ceritaku ceritaku';
 }
 
 .ftprofile{
@@ -65,23 +51,74 @@ main {
 
 .biodata{
   grid-area: biodata;
-  margin: 10px 0 10px 30px;
-}
-.sarjana, .smk{
-  text-align: center;
-}
-.container{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  justify-items: center;
-}
-.biodata {
-}
-.logo-kerja{
-  margin: auto;
+  margin: 10px;
 }
 
-.kerja{
+/*Pendidikan*/
+
+.container2{
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-areas: 
+  'pendidikan karir'
+  'pendidikan karir';
 }
+.pendidikan{
+  display: grid;
+  grid-area: pendidikan;
+  grid-template-areas: 
+  'jd-pendidikan jd-pendidikan'
+  'logosarjana logosmk'
+  'sarjana smk';
+}
+.jd-pendidikan{
+  grid-area: jd-pendidikan;
+}
+.logosarjana{
+  margin: 20px;
+  grid-area: logosarjana;
+}
+.logosmk{
+  margin: 20px;
+  grid-area: logosmk;
+}
+.sarjana{
+  grid-area: sarjana;
+  text-align: center;
+}
+.smk{
+  grid-area: smk;
+  text-align: center;
+}
+/*Karir*/
+.karir{
+  display: grid;
+  grid-area: karir;
+  grid-template-areas: 
+  'jd-karir jd-karir'
+  'logombk mbk'
+  'logoandra andra';
+}
+
+.jd-karir{
+  grid-area: jd-karir;
+}
+
+.logombk{
+  grid-area: logombk;
+  margin: 10px;
+}
+
+.logoandra{
+  grid-area: logoandra;
+  margin: 10px;
+}
+.mbk{
+  grid-area: mbk;
+  margin: 10px;
+}
+
+.andra{
+  grid-area: andra;
+  margin: 10px;
+}
+

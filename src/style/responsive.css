@@ -1,11 +1,47 @@
+@media screen and (max-width: 1000px) {
+    body{
+        margin: 20px;
+    }
+
+    .about{
+        display: grid;
+        grid-template-areas: 
+        'ftprofile biodata biodata'
+        'ftprofile ceritaku ceritaku';
+      }
+      
+      .ftprofile{
+        margin: 10px;
+        
+        grid-area: ftprofile;
+        min-height: 300px;
+        place-content: center;
+      }
+      
+      .ceritaku{
+        margin: 10px;
+        grid-area: ceritaku;
+        font-size: 15px;
+      }
+      
+      .biodata{
+        grid-area: biodata;
+        margin: 10px 0 10px 10px;
+        font-size: 15px;
+      }
+
+      .container2{
+        grid-template-areas: 
+        'pendidikan pendidikan'
+        'karir karir';
+    }
+
+}
 @media screen and (max-width: 670px) {
     body{
         margin: 20px;
     }
-    main{
-        width: 100%;
-        margin: 10px;
-    }
+  
     .about{
         display: grid;
         grid-template-areas: 
@@ -33,5 +69,29 @@
         margin: 10px 0 10px 10px;
         font-size: 15px;
       }
+      .container2{
+          grid-template-areas: 
+          'pendidikan'
+          'karir';
+      }
+      
+      .pendidikan{
+        display: grid;
+        grid-template-areas: 
+        'jd-pendidikan'
+        'logosarjana'
+        'sarjana'
+        'logosmk'
+        'smk';
+      }
 
+        .karir{
+            display: grid;
+            grid-template-areas: 
+            'jd-karir'
+            'logombk'
+            'mbk'
+            'logoandra'
+            'andra';
+          }
 }
