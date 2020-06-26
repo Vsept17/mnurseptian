@@ -1,0 +1,34 @@
+@media screen and (max-width: 670px) {
+    main{
+        width: 100%;
+        margin: 10px;
+    }
+    .about{
+        display: grid;
+        grid-template-areas: 
+        'ftprofile'
+        'biodata'
+        'ceritaku';
+      }
+      
+      .ftprofile{
+        margin: 10px;
+        
+        grid-area: ftprofile;
+        min-height: 300px;
+        place-content: center;
+      }
+      
+      .ceritaku{
+        margin: 10px;
+        grid-area: ceritaku;
+        font-size: 15px;
+      }
+      
+      .biodata{
+        grid-area: biodata;
+        margin: 10px 0 10px 10px;
+        font-size: 15px;
+      }
+
+}

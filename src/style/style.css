@@ -1,13 +1,20 @@
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+img {
+  width: 100%;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 50px;
+  font-size: 18px;
   background-image: url(../assets/bg-card.jpg);
   background-size: cover;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
+
 header {
   display: inline;
   color: white;
@@ -23,25 +30,11 @@ header {
 }
 
 main {
-  width: 100%;
-  padding: 0 5%;
-  display: grid;
 }
 
-.aboutsaya{
-  display: grid;
-  grid-template-columns: auto auto;
-}
 
-.ftprofile {
-  border-radius: 50%;
-  border: 3px ridge black;
-  margin: 0 40px;
-}
 .personal {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 2.5fr 1fr;
+
 }
 
 .content-profiles{
@@ -51,9 +44,29 @@ main {
 
 .about{
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-areas: 
+  'ftprofile biodata biodata'
+  'ftprofile biodata biodata'
+  'ceritaku ceritaku ceritaku';
 }
 
+.ftprofile{
+  margin: 10px;
+  grid-area: ftprofile;
+  min-height: 300px;
+  place-content: center;
+  border-radius: 20px;
+}
+
+.ceritaku{
+  margin: 10px;
+  grid-area: ceritaku;
+}
+
+.biodata{
+  grid-area: biodata;
+  margin: 10px 0 10px 30px;
+}
 .sarjana, .smk{
   text-align: center;
 }
