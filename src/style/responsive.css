@@ -1,4 +1,7 @@
 @media screen and (max-width: 670px) {
+    body{
+        margin: 20px;
+    }
     main{
         width: 100%;
         margin: 10px;
