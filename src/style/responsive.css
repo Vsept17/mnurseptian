@@ -1,8 +1,7 @@
-@media screen and (max-width: 1000px) {
-    body{
-        margin: 20px;
-    }
-
+@media screen and (max-width: 1024px) {
+  .menu-list{
+    grid-template-columns: 1fr 1fr;
+  }
     .about{
         display: grid;
         grid-template-areas: 
@@ -21,13 +20,13 @@
       .ceritaku{
         margin: 10px;
         grid-area: ceritaku;
-        font-size: 15px;
+        font-size: 18px;
       }
       
       .biodata{
         grid-area: biodata;
         margin: 10px 0 10px 10px;
-        font-size: 15px;
+        font-size: 18px;
       }
 
       .container2{
@@ -35,12 +34,41 @@
         'pendidikan pendidikan'
         'karir karir';
     }
+    .pendidikan{
+        grid-template-areas: 
+        'jd-pendidikan jd-pendidikan'
+        'logosarjana logosmk'
+        'sarjana smk';
+      }
 
 }
-@media screen and (max-width: 670px) {
-    body{
-        margin: 20px;
-    }
+@media screen and (max-width: 768px) {
+  .menu-toggle{
+    display: flex;
+  }
+
+  .menu-list ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    background-color: black;
+    top: 0;
+    height: 100vh;
+    width: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: -1;
+    transform: translateX(100%);transition: all 1s;
+    opacity: 0;
+  }
+  .menu-list ul.slide{
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .menu-list{
+    grid-template-columns: 3fr 1fr;
+  }
   
     .about{
         display: grid;

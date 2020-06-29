@@ -3,15 +3,33 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style/style.css">
     <link rel="stylesheet" href="src/style/responsive.css">
     <title>Portofolio Saya</title>
   </head>
   <body>
     <header>
-      
+      <div class="sticky">
+        <nav class="menu-list">
+          <div class="brand">
+            <h3>Web Portofoilo</h3>
+          </div>
+          <ul class="menu">
+            <li><a href="">Portofolio</a></li>
+            <li><a href="">Kontak</a></li>
+            <li><a href="">About Me</a></li>
+          </ul>
+          <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+        
     </header>
     <main>
       <div class="card about">
@@ -45,10 +63,10 @@
         <div class="card pendidikan">
               <h3 class="headline jd-pendidikan">PENDIDIKAN</h3>
               <div class="logosarjana">
-                <img src="./src/assets/unkris.png" alt="Unkris">
+                <img src="./src/assets/unkris.png" width="65%" alt="Unkris">
               </div>
               <div class="logosmk">
-                <img src="./src/assets/malaka.png" alt="SMK Malaka">
+                <img src="./src/assets/malaka.png" width="65%" alt="SMK Malaka">
               </div>
               <p class="sarjana"><b>2015 - 2019<br>Universitas Krisnadwipayana<br>Teknik Informatika<br>GPA 3.45 of 4.00</b></p>
               <p class="smk"><b>2010 - 2013<br>SMK Malaka<br>Teknik Komputer Jaringan</b></p>
@@ -58,22 +76,45 @@
             <div class="logombk">
               <img src="./src/assets/logo-mbk.png" width="65%" alt="MBK">
             </div>
-            <p class="mbk"><b>PT. Mitra Buana Komputindo<br>Okt 2013 - Apr 2014 Technical Support</b><br>Contract<br>
-                  - Migrasi Rollout<br>
-                  - Migrasi E-mail</p>
+            <div class="mbk">
+              <p><b>PT. Mitra Buana Komputindo<br>Okt 2013 - Apr 2014 Technical Support</b><br>Contract</p>
+            <ul class="data-list">
+              <li>Migrasi Email</li>
+              <li>migrasi</li>
+            </ul>
+            </div>
+            
             <div class="logoandra">
                 <img src="./src/assets/logo-andra.png" width="50%" alt="Andra7208">
             </div>
-                <p class="andra"><b>Andra7208 Computer<br>Nov 2015 - Sep2019 IT Support</b><br>Freelance<br>- Service dan Maintenance Komputer Customer pada Hardware dan Software</p>
+            <div class="andra">
+              <p><b>Andra7208 Computer<br>Nov 2015 - Sep2019 IT Support</b><br>Freelance</p>
+                <ul class="data-list">
+                  <li>Service dan Maintenance Komputer Customer pada Hardware dan Software</li>
+                </ul>
+            </div>
           </div>
       </div>
       
-      
-      <div class="card skills">
-        <h3 class="headline">SKILL</h3>
+      <div class="container3">
+        <div class="card skills">
+          <h3 class="headline">SKILL</h3>
+          <ul class="data-list">
+            <li>Troubleshooting Hardware dan Software Komputer</li>
+            <li>Setting Jaringan Dasar LAN</li>
+            <li>Front End Web Developer</li>
+          </ul>
+        </div>
+        <div class="card sertificate">
+          <h3 class="headline">PELATIHAN & SERTIFIKASI</h3>
+        </div>
+        </div>
       </div>
+      
+      
     </main>
     <footer>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>

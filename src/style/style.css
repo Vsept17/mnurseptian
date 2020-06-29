@@ -8,16 +8,109 @@ img {
 }
 
 body {
-  margin: 50px;
   font-size: 18px;
-  background-color: lawngreen;
+  background-image: url(../assets/image-bg.jpg);
   background-size: cover;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  font-family: 'Noto Sans JP', Arial, Helvetica, sans-serif;
+}
+main{
+  margin: 20px 50px;
 }
 .headline{
   color: limegreen;
   font-weight: 400;
+  font-size: 1.6em;
 }
+header{
+  display: inline;
+}
+.sticky{
+  position: sticky;
+  top: 0;
+}
+li{
+ 
+}
+.menu-list .brand{
+  margin: 10px;
+  font-size: 1.1em;
+}
+
+.menu-list ul{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  list-style: none;
+  text-align: center;
+}
+.menu-list a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 11px;
+}
+.menu-list{
+  background-color: darkslategray;
+  color: azure;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+.menu-list ul li a:hover{
+  color: chartreuse;
+}
+
+.data-list{
+  margin-left: 20px;
+  text-align: left;
+}
+/*Menu Toggle*/
+.menu-toggle{
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+.menu-toggle input{
+  position: absolute;
+  width: 28px;
+  height: 22px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span{
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: white;
+transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px, 0);
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+    }
 
 /*Tentang Saya*/
 
@@ -26,6 +119,7 @@ body {
    border-radius: 10px;
    padding: 20px;
    margin: 0 10px 10px 10px;
+   background-color: white;
    background-size: cover;
 }
 
@@ -41,7 +135,6 @@ body {
   grid-area: ftprofile;
   min-height: 300px;
   place-content: center;
-  border-radius: 20px;
 }
 
 .ceritaku{
@@ -94,9 +187,11 @@ body {
   display: grid;
   grid-area: karir;
   grid-template-areas: 
-  'jd-karir jd-karir'
-  'logombk mbk'
-  'logoandra andra';
+  'jd-karir jd-karir jd-karir jd-karir'
+  'logombk mbk mbk mbk'
+  'logombk mbk mbk mbk'
+  'logoandra andra andra andra'
+  'logoandra andra andra andra';
 }
 
 .jd-karir{
@@ -122,3 +217,17 @@ body {
   margin: 10px;
 }
 
+.container3{
+  display: grid;
+  grid-template-areas:
+  'skill sertificate';
+}
+
+.skills{
+  grid-area: skill;
+}
+
+
+.sertificate{
+  grid-area: sertificate;
+}
