@@ -122,4 +122,11 @@
             'logoandra'
             'andra';
           }
+
+          .container3{
+            display: grid;
+            grid-template-areas:
+            'skill'
+            'sertificate';
+          }
 }
