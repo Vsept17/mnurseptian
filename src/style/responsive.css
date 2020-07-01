@@ -176,11 +176,13 @@
       'skill'
       'sertificate';
   }
+
+
   footer{
-  font-size: 1rem;
+  font-size: 12px;
   }
   .copyright p{
-    font-size: 12px;
+    font-size: 10px;
   }
   .kontak, .headline-footer{
     padding: 10px 30px 10px 30px;
