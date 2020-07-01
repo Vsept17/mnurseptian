@@ -12,7 +12,7 @@ body {
   background-image: url(../assets/image-bg.jpg);
   background-size: cover;
   overflow-x: hidden;
-  font-family: 'Noto Sans JP', Arial, Helvetica, sans-serif;
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
 }
 main{
   margin: 20px 50px;
@@ -59,7 +59,7 @@ header{
 }
 
 .data-list{
-  margin-left: 20px;
+  margin-left: 25px;
   text-align: left;
 }
 /*Menu Toggle*/
