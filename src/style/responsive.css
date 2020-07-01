@@ -1,47 +1,50 @@
 @media screen and (max-width: 1024px) {
+
   .menu-list{
     grid-template-columns: 1fr 1fr;
   }
-    .about{
-        display: grid;
-        grid-template-areas: 
-        'ftprofile biodata biodata'
-        'ftprofile ceritaku ceritaku';
-      }
+  .about{
+    display: grid;
+    grid-template-areas: 
+    'ftprofile biodata'
+    'ceritaku ceritaku';
+  }
       
-      .ftprofile{
-        margin: 10px;
-        grid-area: ftprofile;
-        min-height: 300px;
-        place-content: center;
-      }
+  .ftprofile{
+    margin: 10px;
+    grid-area: ftprofile;
+    min-height: 300px;
+    place-content: center;
+  }
       
-      .ceritaku{
-        margin: 10px;
-        grid-area: ceritaku;
-        font-size: 18px;
-      }
+  .ceritaku{
+    margin: 10px;
+    grid-area: ceritaku;
+    font-size: 18px;
+  }
       
-      .biodata{
-        grid-area: biodata;
-        margin: 10px 0 10px 10px;
-        font-size: 18px;
-      }
+  .biodata{
+    grid-area: biodata;
+    margin: 10px 0 10px 10px;
+    font-size: 18px;
+  }
 
-      .container2{
-        grid-template-areas: 
-        'pendidikan pendidikan'
-        'karir karir';
-    }
-    .pendidikan{
-        grid-template-areas: 
-        'jd-pendidikan jd-pendidikan'
-        'logosarjana logosmk'
-        'sarjana smk';
-      }
-
+  .container2{
+    grid-template-areas: 
+      'pendidikan pendidikan'
+      'karir karir';
+  }
+  .pendidikan{
+    grid-template-areas: 
+      'jd-pendidikan jd-pendidikan'
+      'logosarjana logosmk'
+      'sarjana smk';
+  }
 }
+
+
 @media screen and  (max-width: 768px) {
+
   .menu-toggle{
     display: flex;
   }
@@ -57,7 +60,7 @@
     width: 70%;
     justify-content: space-evenly;
     align-items: center;
-    z-index: -1;
+    z-index: 1;
     transform: translateY(-100%);transition: all 1s;
     opacity: 0;
   }
@@ -72,10 +75,12 @@
   .about{
     display: grid;
     grid-template-areas: 
-    'ftprofile biodata'
-    'ceritaku ceritaku';
+    'ftprofile'
+    'biodata'
+    'ceritaku';
   }
 }
+
 
 @media screen and (max-width: 600px) {
 
@@ -91,10 +96,10 @@
     background-color: black;
     top: 0;
     height: 100vh;
-    width: 70%;
+    width: 50%;
     justify-content: space-evenly;
     align-items: center;
-    z-index: -1;
+    z-index: 1;
     transform: translateY(-100%);transition: all 1s;
     opacity: 0;
   }
@@ -106,63 +111,62 @@
     grid-template-columns: 3fr 1fr;
   }
   
-    .about{
-        display: grid;
-        grid-template-areas: 
-        'ftprofile'
-        'biodata'
-        'ceritaku';
-      }
+  .about{
+    display: grid;
+    grid-template-areas: 
+      'ftprofile'
+      'biodata'
+      'ceritaku';
+  }
       
-      .ftprofile{
-        margin: 10px;
-        
-        grid-area: ftprofile;
-        min-height: 300px;
-        place-content: center;
-      }
+  .ftprofile{
+    margin: 10px;
+    grid-area: ftprofile;
+    min-height: 300px;
+    place-content: center;
+  }
       
-      .ceritaku{
-        margin: 10px;
-        grid-area: ceritaku;
-        font-size: 15px;
-      }
+  .ceritaku{
+    margin: 10px;
+    grid-area: ceritaku;
+    font-size: 15px;
+  }
       
-      .biodata{
-        grid-area: biodata;
-        margin: 10px 0 10px 10px;
-        font-size: 15px;
-      }
-      .container2{
-          grid-template-areas: 
-          'pendidikan'
-          'karir';
-      }
+  .biodata{
+    grid-area: biodata;
+    margin: 10px 0 10px 10px;
+    font-size: 15px;
+  }
+  .container2{
+    grid-template-areas: 
+      'pendidikan'
+      'karir';
+  }
       
-      .pendidikan{
-        display: grid;
-        grid-template-areas: 
-        'jd-pendidikan'
-        'logosarjana'
-        'sarjana'
-        'logosmk'
-        'smk';
-      }
+  .pendidikan{
+    display: grid;
+    grid-template-areas: 
+      'jd-pendidikan'
+      'logosarjana'
+      'sarjana'
+      'logosmk'
+      'smk';
+  }
 
-        .karir{
-            display: grid;
-            grid-template-areas: 
-            'jd-karir'
-            'logombk'
-            'mbk'
-            'logoandra'
-            'andra';
-          }
+  .karir{
+    display: grid;
+    grid-template-areas: 
+      'jd-karir'
+      'logombk'
+      'mbk'
+      'logoandra'
+      'andra';
+  }
 
-          .container3{
-            display: grid;
-            grid-template-areas:
-            'skill'
-            'sertificate';
-          }
+  .container3{
+    display: grid;
+    grid-template-areas:
+      'skill'
+      'sertificate';
+  }
 }
