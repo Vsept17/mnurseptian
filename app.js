@@ -5,7 +5,7 @@ menuToggle.addEventListener('click', function(){
 });
 
 const ftProfile = document.querySelector('.ftprofile');
-ftProfile.addEventListener('click', (even) => {
+ftProfile.addEventListener('click', (event) => {
   if (document.fullscreenElment) {
     document.exitFullscreen();
   } else {

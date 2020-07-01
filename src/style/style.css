@@ -22,6 +22,12 @@ main{
   font-weight: 400;
   font-size: 1.6em;
 }
+
+.sertifikat{
+  margin-left: 25px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
 header{
   display: inline;
 }
@@ -229,4 +235,42 @@ transform: rotate(45deg) translate(-1px, -1px);
 
 .sertificate{
   grid-area: sertificate;
+}
+
+/*Footer*/
+
+footer{
+  background-color: honeydew;
+}
+.fa{
+  text-decoration: none;
+}
+.data-contact{
+  text-decoration: none;
+  list-style: none;
+}
+.social li{
+  display: inline-block;
+  margin: 0 10px;
+}
+.headline-footer{
+  padding: 10px 60px 10px 60px; 
+}
+.kontak{
+  display: grid;
+  padding: 10px 60px 20px 60px;
+  grid-template-areas: 
+  'kontak sosmed';
+}
+
+.copyright{
+  border-top: 1px solid gainsboro ;
+  margin: 0 20px;
+}
+
+.copyright p{
+  font-size: 14px;
+  margin: 10px 10px 0 20px;
+  padding-bottom: 10px;
+
 }

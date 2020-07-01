@@ -88,6 +88,9 @@
     margin: 20px 10px;
   }
 
+  .headline{
+    font-size: 1.2em;
+  }
   .menu-toggle{
     display: flex;
   }
@@ -172,5 +175,14 @@
     grid-template-areas:
       'skill'
       'sertificate';
+  }
+  footer{
+  font-size: 1rem;
+  }
+  .copyright p{
+    font-size: 12px;
+  }
+  .kontak, .headline-footer{
+    padding: 10px 30px 10px 30px;
   }
 }
