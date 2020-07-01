@@ -43,7 +43,9 @@
 
 }
 @media screen and (max-width: 680px) {
-
+  body{
+    max-width: 680px;
+  }
   .menu-toggle{
     display: flex;
   }
@@ -60,12 +62,12 @@
     justify-content: space-evenly;
     align-items: center;
     z-index: -1;
-    transform: translateX(100%);transition: all 1s;
+    transform: translateY(-100%);transition: all 1s;
     opacity: 0;
   }
   .menu-list ul.slide{
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
   .menu-list{
     grid-template-columns: 3fr 1fr;
